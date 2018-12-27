@@ -6,7 +6,7 @@ from __future__ import absolute_import, unicode_literals
 from setuptools import setup
 from codecs import open
 from os import path
-from apkverify.metadata import __title__, __version__, __description__, __url__, __author__, __author_email__, __license__
+exec(open('apkverify/metadata.py').read())
 
 here = path.abspath(path.dirname(__file__))
 
