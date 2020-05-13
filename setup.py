@@ -6,9 +6,9 @@ from __future__ import absolute_import, unicode_literals
 from setuptools import setup
 from codecs import open
 from os import path
-from apkverify.metadata import __title__, __version__, __description__, __url__, __author__, __author_email__, __license__
 
 here = path.abspath(path.dirname(__file__))
+exec(open(path.join(here, 'apkverify/metadata.py')).read())
 
 
 with open(path.join(here, 'README.md'), 'r', encoding='utf-8') as f:
